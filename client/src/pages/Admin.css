@@ -1,0 +1,160 @@
+.admin-page {
+  padding-bottom: 2rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.admin-tabs button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border, #ddd);
+  background: var(--bg-card, #fff);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-tabs button.active {
+  background: var(--accent, #1a5f7a);
+  color: #fff;
+  border-color: transparent;
+}
+
+.admin-section h2,
+.admin-section h3 {
+  margin-top: 0;
+}
+
+.admin-section h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 720px;
+}
+
+.admin-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid var(--border, #ccc);
+  font: inherit;
+}
+
+.admin-qbuilder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.admin-question {
+  padding: 0.9rem;
+}
+
+.admin-question-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.admin-question-title {
+  font-weight: 700;
+}
+
+.admin-inline {
+  display: grid !important;
+  grid-template-columns: auto;
+  gap: 0.35rem;
+  min-width: 220px;
+}
+
+.admin-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-options-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.admin-option-row {
+  display: grid;
+  grid-template-columns: 20px 1fr auto;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .admin-option-row {
+    grid-template-columns: 20px 1fr;
+  }
+  .admin-option-row button {
+    grid-column: 1 / -1;
+  }
+}
+
+.admin-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .admin-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.admin-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border, #eee);
+}
+
+.admin-flash {
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.admin-flash.ok {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.admin-flash.err {
+  background: #ffebee;
+  color: #b71c1c;
+}

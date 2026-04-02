@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Environment (секреты и пароли БД)
+.env
+.env.local
+.env.*.local
+
+# Build
+dist/
+build/
+
+# Vite
+client/dist/
+*.local
+
+# Logs and OS
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

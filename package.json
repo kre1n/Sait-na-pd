@@ -1,0 +1,16 @@
+{
+  "name": "ohrana-truda-site",
+  "version": "1.0.0",
+  "description": "Сайт по охране труда на предприятии",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && node index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
